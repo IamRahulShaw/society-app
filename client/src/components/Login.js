@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import { AuthContext } from "../App";
 
@@ -62,6 +62,9 @@ function Login() {
           Login
         </button>
       </form>
+      <div className="d-flex-col-center">
+        <Link to="/register">register</Link>
+      </div>
     </div>
   );
 }
